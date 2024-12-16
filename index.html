@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <!--* start-Navbar-Section -->
+    <nav class="navbar py-5 navbar-expand-lg">
+      <div class="container">
+        <a class="logo text-decoration-none text-white d-flex">
+          <img
+            src="images/logo@2x.png"
+            class="img-logo"
+            alt="logo of website"
+          />
+          <div class="logo-text ms-3">
+            <h1 class="h5 mb-0">Weather</h1>
+            <small>tagline goes here </small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="text-white"> <i class="fa fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link links active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link links" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link links" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link links" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link links" href="./contact.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--* end-Navbar-Section -->
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="search-input position-relative">
+            <input
+              class="form-control input-field"
+              type="text"
+              placeholder="Find your location..."
+              id="searchInput"
+            />
+            <button type="submit" id="submitBtn">Find</button>
+          </div>
+        </div>
+      </section>
+      <section class="days" id="days">
+        <div class="container">
+          <div class="row days-container g-0" id="Data"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="subscribe-input position-relative">
+              <input
+                class="form-control input-field"
+                type="text"
+                placeholder="Enter Your email to subscribe..."
+                id="subscribe"
+              />
+              <button type="submit" id="SubscribeBtn">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <div class="social-links d-flex align-items-center">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+          <p class="mt-3">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

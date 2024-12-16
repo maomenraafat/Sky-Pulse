@@ -1,0 +1,29 @@
+@media (max-width: 991px) {
+  .navbar-nav {
+    align-items: center;
+  }
+  .nav-item .links {
+    border: none;
+    &.active {
+      border: none;
+    }
+    &:hover {
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .degree {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .full-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .day-content .degree .number {
+    font-size: 5.428571rem;
+  }
+}
